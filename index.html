@@ -3,66 +3,265 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Portofolio</title>
+        <meta name="description" content="Portfolio of Mochamad Dzikra Auliansyah - Engineering student passionate about technology, innovation, and programming." />
+        <title>Mochamad Dzikra Auliansyah | Portfolio</title>
+        <link rel="icon" type="image/jpeg" href="assets/profile.jpg" />
+        <!-- Modern Google Font: Plus Jakarta Sans -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="porto.css" />
     </head>
     <body>
-        <header>
-            <img src="profile.jpg" alt="Profile Picture" />
-            <h1>Mochamad Dzikra Auliansyah</h1>
-            <p class="tagline">An engineering student with a strong sense of curiosity, a desire to develop and nurture my interests and talents, strong adaptability skills and the ability to collaborate effectively</p>
+        <!-- Sticky Navigation -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="#home" class="nav-brand">Mochamad Dzikra Auliansyah</a>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <header id="home" class="hero">
+            <div class="hero-container">
+                <div class="avatar-wrapper">
+                    <img src="assets/profile.jpg" alt="Mochamad Dzikra Auliansyah" class="hero-avatar" />
+                </div>
+                <div class="hero-badge">Engineering Student</div>
+                <h1 class="hero-title">Mochamad Dzikra Auliansyah</h1>
+                <p class="hero-tagline">
+                    An engineering student with a strong sense of curiosity, a desire to develop and nurture my interests and talents, strong adaptability skills, and the ability to collaborate effectively.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
         </header>
 
-        <section class="about">
-            <h2>About Me</h2>
-            <div class="about-content">
-                <img src="profile.jpg" alt="Profile Picture" />
-                <p>
-                Hello! I'm Mochamad Dzikra Auliansyah, an engineering student passionate about technology and innovation. I thrive on challenges and am always eager to learn new skills. My adaptability and teamwork abilities help me excel in collaborative environments. I look forward to contributing my talents and growing both personally and professionally.
-                </p>
-            </div>
-        </section>
-
-        <section class="skills">
-            <h2>Skills</h2>
-            <div class="skills-list">
-                <div class="skills-card">HTML</div>
-                <div class="skills-card">CSS</div>
-                <div class="skills-card">JavaScript</div>
-                <div class="skills-card">C</div>
-                <div class="skills-card">UI/UX Design</div>
-            </div>
-        </section>
-
-        <section id="projects" class="projects">
-            <h2>Portfolio / Projects</h2>
-            <div class="projects-list">
-                <div class="projects-card">
-                    <img src="web_porto.png" alt="Project Image" />
-                    <h3>Personal Website</h3>
-                    <p>A personal website to showcase my portfolio and blog about my learning journey.</p>
+        <main>
+            <!-- About Section -->
+            <section id="about" class="section about">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-tag">About Me</span>
+                        <h2 class="section-title">Background & Passion</h2>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-image-wrap">
+                            <img src="assets/profile.jpg" alt="About Mochamad Dzikra" class="about-img" />
+                        </div>
+                        <div class="about-text">
+                            <p>
+                                Hello! I'm <strong>Mochamad Dzikra Auliansyah</strong>, an engineering student passionate about technology and innovation. I thrive on challenges and am always eager to learn new skills.
+                            </p>
+                            <p>
+                                My adaptability and teamwork abilities help me excel in collaborative environments. I look forward to contributing my talents and growing both personally and professionally.
+                            </p>
+                            <div class="about-highlights">
+                                <div class="highlight-item">
+                                    <span class="highlight-title">Focus</span>
+                                    <span class="highlight-desc">Engineering</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <span class="highlight-title">Interest</span>
+                                    <span class="highlight-desc">Software & Hardware</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="projects-card">
-                    <img src="final_project.png" alt="Project Image" />
-                    <h3>Final Project – Basic Computer Practicum: Programming in C</h3>
-                    <p>Developed a simple holiday tour system in C for basic package management</p>
+            </section>
+
+            <!-- Skills Section -->
+            <section id="skills" class="section skills">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-tag">Skills</span>
+                        <h2 class="section-title">Soft Skills & Hard Skills</h2>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">🌐</div>
+                            <span class="skill-name">HTML5</span>
+                            <span class="skill-type">Frontend</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">🎨</div>
+                            <span class="skill-name">CSS3</span>
+                            <span class="skill-type">Styling & Design</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">⚡</div>
+                            <span class="skill-name">JavaScript</span>
+                            <span class="skill-type">Programming</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">💻</div>
+                            <span class="skill-name">C</span>
+                            <span class="skill-type">Programming Language</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">✨</div>
+                            <span class="skill-name">UI/UX Design</span>
+                            <span class="skill-type">Product Design</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">🛠️</div>
+                            <span class="skill-name">Git & GitHub</span>
+                            <span class="skill-type">Version Control</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">🐍</div>
+                            <span class="skill-name">Python</span>
+                            <span class="skill-type">Programming Language</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">🔧</div>
+                            <span class="skill-name">Arduino</span>
+                            <span class="skill-type">Microcontroller</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">🎨</div>
+                            <span class="skill-name">Figma</span>
+                            <span class="skill-type">Design Tool</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">🎤</div>
+                            <span class="skill-name">Public Speaking</span>
+                            <span class="skill-type">Communication Skills</span>
+                        </div>
+                    </div>
                 </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects" class="section projects">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-tag">Portfolio</span>
+                        <h2 class="section-title">Featured Projects</h2>
+                    </div>
+                    <div class="projects-grid">
+                        <article class="project-card">
+                            <div class="project-image-box">
+                                <img src="assets/web_porto.png" alt="Personal Website Project" class="project-img" />
+                            </div>
+                            <div class="project-body">
+                                <div class="project-tags">
+                                    <span class="tag">HTML5</span>
+                                    <span class="tag">CSS3</span>
+                                    <span class="tag">Web</span>
+                                </div>
+                                <h3 class="project-title">Personal Website</h3>
+                                <p class="project-description">
+                                    A personal portfolio website designed with a clean, responsive layout to showcase projects, skills, and learning journey.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="project-card">
+                            <div class="project-image-box">
+                                <img src="assets/final_project.png" alt="Tour System in C Project" class="project-img" />
+                            </div>
+                            <div class="project-body">
+                                <div class="project-tags">
+                                    <span class="tag">C Language</span>
+                                    <span class="tag">Algorithms</span>
+                                    <span class="tag">Practicum</span>
+                                </div>
+                                <h3 class="project-title">Holiday Tour System in C</h3>
+                                <p class="project-description">
+                                    Final Project for Basic Computer Practicum: Developed a console-based tour package management system for automated booking handling and customer records.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="project-card">
+                            <div class="project-carousel" data-carousel>
+                                <div class="carousel-track-wrapper">
+                                    <div class="carousel-track">
+                                        <div class="carousel-slide">
+                                            <img src="assets/teleusg.png" alt="TeleUSG System Interface" />
+                                        </div>
+                                        <div class="carousel-slide">
+                                            <img src="assets/dash_teleusg.png" alt="TeleUSG Dashboard" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="button" class="carousel-btn prev" aria-label="Previous slide">&#8249;</button>
+                                <button type="button" class="carousel-btn next" aria-label="Next slide">&#8250;</button>
+                                <div class="carousel-dots">
+                                    <button type="button" class="carousel-dot active" aria-label="Slide 1"></button>
+                                    <button type="button" class="carousel-dot" aria-label="Slide 2"></button>
+                                </div>
+                            </div>
+                            <div class="project-body">
+                                <div class="project-tags">
+                                    <span class="tag">Telemedicine</span>
+                                    <span class="tag">Healthcare Tech</span>
+                                    <span class="tag">Dashboard</span>
+                                </div>
+                                <h3 class="project-title">TeleUSG – Tele-Ultrasonography System</h3>
+                                <p class="project-description">
+                                    A telemedicine platform featuring an ultrasound examination interface and real-time clinical monitoring dashboard to facilitate remote diagnosis and patient care.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="section contact">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-tag">Contact</span>
+                        <h2 class="section-title">Let's Connect</h2>
+                        <p class="section-subtitle">
+                            Feel free to reach out for collaborations, project discussions, or internship opportunities.
+                        </p>
+                    </div>
+                    <div class="contact-grid">
+                        <a href="mailto:mochdzikraauliansyah@gmail.com" class="contact-card">
+                            <div class="contact-icon">✉️</div>
+                            <div class="contact-info">
+                                <span class="contact-label">Email</span>
+                                <span class="contact-value">mochdzikraauliansyah@gmail.com</span>
+                            </div>
+                        </a>
+                        <a href="https://github.com/Modzarella" target="_blank" rel="noopener noreferrer" class="contact-card">
+                            <div class="contact-icon">🐙</div>
+                            <div class="contact-info">
+                                <span class="contact-label">GitHub</span>
+                                <span class="contact-value">github.com/Modzarella</span>
+                            </div>
+                        </a>
+                        <a href="https://www.instagram.com/mdzikraa_/" target="_blank" rel="noopener noreferrer" class="contact-card">
+                            <div class="contact-icon">📸</div>
+                            <div class="contact-info">
+                                <span class="contact-label">Instagram</span>
+                                <span class="contact-value">@mdzikraa_</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Minimalist Footer -->
+        <footer class="footer">
+            <div class="container footer-content">
+                <p>&copy; 2025 <span>Mochamad Dzikra Auliansyah</span>. All rights reserved.</p>
+                <a href="#home" class="back-to-top">Back to top ↑</a>
             </div>
-        </section>
+        </footer>
 
-        <section class="contact">
-            <h2>Contact Me</h2>
-            <p>If you'd like to get in touch, feel free to reach out via email or connect with me on social media:</p>
-            <ul>
-                <li>Email: <a href="mailto:mochdzikraauliansyah@gmail.com">mochdzikraauliansyah@gmail.com</a></li>
-                <li>Github <a href="https://github.com/Modzarella" target="_blank">github.com/Modzarella</a></li>
-                <li>Instgaram: <a href="https://www.instagram.com/mdzikraa_/" target="_blank">@mdzikraa_</a></li>
-            </ul>
-        </section>
-
-        <footer>
-            &copy; 2025 <span>Mochamad Dzikra Auliansyah</span>. All rights reserved.
+        <script src="script.js"></script>
     </body>
-
 </html>
-
